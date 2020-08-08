@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fffff6;
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/menu.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 30px 30px;
+  
+  &--cross {
+    background-image: url(../img/icons/cross.svg);
+    background-size: 25px 25px;
+  }
+}
+
+.menu__list {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.menu__phone {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: 19px;
+  font-weight: 300;
+  color: #000;
+}

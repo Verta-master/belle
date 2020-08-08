@@ -1,0 +1,38 @@
+.service {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F3F3F3;
+}
+
+.service__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.service__item {
+  margin-bottom: 40px;
+}
+
+.service__img {
+  width: 100%;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.service__info {
+  padding-left: 20px;
+  color: #000;
+  
+  ul {
+    padding: 0;
+    padding-left: 40px;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: disc;
+  }
+}
