@@ -85,10 +85,10 @@ gulp.task('js:del', function(done) {
 });
 
 gulp.task('js:libraries', function(done) {
-  return gulp.src('js/libraries/*.js')
+  return gulp.src('js/*.js')
     .pipe(plumber())
-    .pipe(uglify())
-    .pipe(gulp.dest('build/js/libraries'))
+//    .pipe(uglify())
+    .pipe(gulp.dest('build/js'))
     .pipe(server.stream());
     done();
 });
