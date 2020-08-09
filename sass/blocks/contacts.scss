@@ -9,7 +9,7 @@
 }
 
 .contacts__map {
-  min-height: 550px;
+  height: 550px;
   
   iframe {
     display: block;
@@ -35,5 +35,32 @@
       color: red;
       text-decoration: underline;
     }
+  }
+}
+
+//-----------------------------
+@media (min-width: 768px) {
+  .contacts__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contacts__item {
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    a,
+    span {
+      display: block;
+    }
+  }
+}
+
+//-----------------------------
+@media (min-width: 1024px) {
+  .contacts__item a,
+  .contacts__item span {
+    display: inline;
   }
 }
