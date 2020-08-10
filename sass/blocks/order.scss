@@ -1,0 +1,59 @@
+.order {
+  position: relative;
+  z-index: 2;
+  order: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 16px;
+  color: #fff;
+  text-align: center;
+  background-image: url(../img/images/slide-stilist-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 39, 39, 0.9);
+  }
+}
+
+.order__title {
+  margin: 0;
+  padding: 1.7rem 3.7rem;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+  text-align: left;
+  
+  span {
+    color: #ABB401;
+  }
+}
+
+.order__btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+//-----------------------------
+@media (min-width: 768px) {
+  .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 30px;
+  }
+  
+  .order__title {
+    padding: 0 30px;
+    padding-right: 60px;
+  }
+}

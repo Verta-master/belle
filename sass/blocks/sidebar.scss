@@ -1,0 +1,73 @@
+.sidebar {
+  display: none;
+}
+
+//-----------------------------
+@media (min-width: 1024px) {
+  .sidebar {
+    display: block;
+    width: 25%;
+    padding-right: 15px;
+    padding-top: 60px;
+  }
+  
+  .sidebar__title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 35px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #373a3c;
+    font-weight: 500;
+  }
+  
+  .sidebar__sublist,
+  .sidebar__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .sidebar__item {
+    border-bottom: 1px solid #c3d833;
+    transition: ease-out 0.3s;
+    
+    &:hover,
+    &:active,
+    &--active {
+      background-color: #fffff6;
+      transition: ease-out 0.3s;
+    }
+  }
+  
+  .sidebar__link {
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .sidebar__subitem {
+    border-top: 1px solid #c3d833;
+    background-color: #fff;
+    background-image: url(../img/icons/sm_del.gif);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 12px 12px;
+    
+    a {
+      display: block;
+      padding: 10px 0 10px 40px;
+      color: #000;
+      font-size: 14px;
+      
+      &:hover,
+      &:active,
+      &--active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

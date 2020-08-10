@@ -1,0 +1,37 @@
+.info {
+  min-height: 250px;
+  padding-top: 20px;
+  color: #666;
+  
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  ul {
+    max-width: 100%;
+    padding: 0;
+    padding-left: 40px;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: disc;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+  }
+}
+
+.info__img {
+  float: left;
+  width: 201px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

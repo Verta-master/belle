@@ -1,0 +1,121 @@
+.tabs__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  .ui-tabs-active a {
+    color: #fff;
+    background-color: #acb428;
+    text-decoration: none;
+  }
+}
+
+.tabs__name {
+  a {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.tabs__field {
+  margin-bottom: 30px;
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  table {
+    min-width: 432px;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+    
+    th {
+      padding: 0.75rem;
+      color: #fff;
+      background-color: #acb428;
+    }
+    
+    th:nth-child(2),
+    td:nth-child(2) {
+      width: 60%;
+      text-align: left;
+    }
+    
+    th:last-child,
+    td:last-child {
+      width: 30%;
+      text-align: center;
+    }
+    
+    tr:nth-child(2n) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+      
+      span {
+        color: red;
+      }
+    }
+    
+    th:first-child,
+    td:first-child {
+      width: 10%;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+.tabs__table {
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.tabs__price {
+  font-size: 20px;
+  
+  i {
+    font-size: 16px;
+  }
+}
+
+.tabs__btn {
+  padding: 4px 8px;
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 0.2rem;
+}
+
+.tabs__comment {
+  span {
+    color: red;
+  }
+}
+
+//-----------------------------
+@media (min-width: 768px) {
+  .tabs__table {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .tabs__field table {
+    width: 100%;
+  }
+}

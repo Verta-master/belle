@@ -7,3 +7,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+//-----------------------------
+@media (min-width: 1024px) {
+  .wrapper--columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .wrapper__content {
+    width: 75%;
+    padding-left: 15px;
+  }
+}
